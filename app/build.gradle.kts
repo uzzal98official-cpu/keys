@@ -25,8 +25,3 @@ android {
         jvmTarget = "17"
     }
 }
-
-// Explicitly configure Java compilation for Java 17
-tasks.withType<JavaCompile>().configureEach {
-    options.release.set(17)
-}
